@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A testing bed for Rails 7 features including Importmaps, Hotwire and Stimulus.  Sources:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Rails 7 Demo](https://www.youtube.com/watch?v=mpWFrUwAN88&t=57s)
+* [Hotwire Demo](https://www.youtube.com/watch?v=eKY-QES1XQQ)
