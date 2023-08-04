@@ -18,7 +18,9 @@
 
   <div>
     <%= form.label :content, style: "display: block" %>
-    <%= form.text_area :content %>
+    <div style="background: white; padding: 0.5rem; min-width: fit-content">
+      <%= form.rich_text_area :content, style: "color: black" %>
+    </div>
   </div>
 
   <div>
