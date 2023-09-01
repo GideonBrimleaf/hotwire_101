@@ -26,7 +26,8 @@ class PostsController < ApplicationController
     respond_to do |format|
 
       if @post.save
-        format.html { redirect_to posts_url, notice: "Post was successfully created." }
+        format.turbo_stream { render turbo_stream: turbo_stream.append("posts", @post) }
+        format.html { redirect_to @post, notice: "Post was successfully created." }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new, status: :unprocessable_entity }
