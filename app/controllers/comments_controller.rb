@@ -4,7 +4,11 @@ class CommentsController < ApplicationController
   def create
     comment = @post.comments.create! params.required(:comment).permit(:content)
     CommentsMailer.submitted(comment).deliver_later
-    redirect_to @post
+
+    respond_to do |format|
+      format.turbo_stream
+      format.html { redirect_to @post }
+    end
   end
 
   private

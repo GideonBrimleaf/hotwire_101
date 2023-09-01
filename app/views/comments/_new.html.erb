@@ -1,4 +1,5 @@
-<%= form_with model: [post, Comment.new] do |form| %>
+<%= form_with model: [post, Comment.new],
+              data: {controller: "hello", action: "turbo:submit-end->hello#reset"} do |form| %>
   Your comment:<br>
   <%= form.text_area :content, size: "20x5" %>
   <%= form.submit %>
